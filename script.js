@@ -15,7 +15,7 @@
                 // y.style.color = 'red';
                 // y.style.display = "block";
                 document.getElementById('alerting').style.display = "block";
-                document.getElementById('alerting').style.color = "red"
+                document.getElementById('alerting').style.color = "red";
 
             }
         }
@@ -38,14 +38,18 @@
             window.print();
         }
 
-function checking(){
-    checkboxes = document.querySelectorAll('input[name = "interest"]:checked')
-    var n = checkboxes.length
-    if (n>=2){
-        alert('Choose any two options only')
-        checkboxes.checked = "false";
+function checking(checkb){
+    checkboxes = document.querySelectorAll('input[name = "interest"]:checked');
+    console.log(checkboxes);
+    var n = checkboxes.length;
+    if (n>2){
+        alert('Choose any two options only');
+        if(checkb.checked == true){
+            checkb.checked = false;
+        }
+       
     }
     else{
-        alert('checking successful')
+        alert('checking successful');
     }
 }
