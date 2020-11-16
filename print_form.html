@@ -20,77 +20,106 @@
             background-color: rgb(47, 56, 65);
             color: white;
         }
+
+        li {
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            
+        }
     </style>
 </head>
 
 <body>
     <div class="container-fluid">
 
-        <div class="form-row mx-auto text-center mb-4" style="border-bottom: 1px solid rgb(47, 56, 65);">
-            <div class="col-12 mx-auto pt-4 pl-2 pr-2 pb-0 rounded mb-3">
-                <h5 class="mx-auto">REGISTRATION FORM FOR STUDENT MEMBERSHIP</h5>
-            </div>
+
+        <div class="table-responsive  table-striped table-inverse mx-auto">
+            <table class="table table-bordered table-condensed" style="width:65vw; margin:auto;">
+
+                <tbody>
+
+
+
+                    <tr scope="row ">
+                        <td><i class="fas fa-address-book "> Name</i></td>
+                        <td><span>:</span></td>
+                        <td><span class=>Name Rendered</span></td>
+                    </tr>
+
+                    <tr scope="row" style="white-space: nowrap;">
+                        <td><i class="fas fa-mail-bulk"> Email</i></td>
+                        <td><span>:</span></td>
+                        <td><span>Email Rendered</span></td>
+                    </tr>
+
+                    <tr scope="row" style="white-space: nowrap;">
+                        <td>
+                            <i class="fa fa-calendar" aria-hidden="true"> Date of Birth</i>
+                        </td>
+                        <td><span>:</span></td>
+                        <td><span>DOB Rendered</span></td>
+                    </tr>
+
+                    <tr scope="row">
+                        <td><i class="fa fa-book" aria-hidden="true"> Batch</i></td>
+                        <td><span>:</span></td>
+                        <td><span>Batch Rendered</span></td>
+                    </tr>
+
+                    <tr scope="row">
+                        <td><i class="fa fa-address-card" aria-hidden="true"> Address</i></td>
+                        <td><span>:</span></td>
+                        <td><span >
+                                <ul class = "m-0 p-0">
+                                    <li>Kottukonathu Thekkethil</li>
+                                    <li>Odanavattom P O</li>
+                                    <li>Kollam</li>
+                                    <li>Kerala</li>
+                                    <li>691512</li>
+                                </ul>
+                            </span></td>
+                    </tr>
+
+                    <tr scope="row">
+                        <td><i class="fas fa-mobile"> Mobile No </i></td>
+                        <td><span>:</span></td>
+                        <td><span>Mobile Rendered</span></td>
+                    </tr>
+
+                    <tr scope="row">
+                        <td><i class="fas fa-business-time    "> Special Interest</i></td>
+                        <td><span>:</span></td>
+                        <td><span>Sp Intefrest Rendered</span></td>
+                    </tr>
+
+                    <tr scope="row">
+                        <td>
+                            <i class="fa fa-graduation-cap" aria-hidden="true"> Career Interest</i>
+                        </td>
+                        <td><span>:</span></td>
+                        <td><span>Career Interest Rendered</span></td>
+                    </tr>
+
+                    <tr scope="row">
+                        <td><i class="fas fa-podcast"> Type of services</i></td>
+                        <td><span>:</span></td>
+                        <td><span>Type of service Rendered</span></td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+
+
+
         </div>
 
-        <div class="table-responsive">
-        <table class="table" style="width:50vw; margin:auto;">
-            <tbody>
-                <tr scope="row">
-                    <td><center><i class="fas fa-address-book"> Name</i></center></td>
-                    <td><center><span>Name Rendered</span></center></td>
-                </tr>
-
-                <tr scope="row" style="white-space: nowrap;">
-                    <td><center><i class="fas fa-mail-bulk"> Email</i></td>
-                    <td><center><span>Email Rendered</span></center></td>
-                </tr>
-
-                <tr scope="row" style="white-space: nowrap;">
-                    <td><center> 
-                <i class="fa fa-calendar" aria-hidden="true"> Date of Birth</i>
-                    </center></td>
-                    <td><center><span>DOB Rendered</span></center></td>
-                </tr>
-
-                <tr scope="row">
-                    <td><center><i class="fa fa-book" aria-hidden="true"> Batch</i></center></td>
-                    <td><center><span>Batch Rendered</span></center></td>
-                </tr>
-
-                <tr scope="row">
-                    <td><center><i class="fa fa-address-card" aria-hidden="true"> Address</i></center></td>
-                    <td><center><span style="height:150px;width:60%">ADDRESS</span></center></td>
-                </tr>
-
-                <tr scope="row">
-                    <td><center><i class="fas fa-mobile"> Mobile No </i></center></td>
-                    <td><center><span>Mobile Rendered</span></center></td>
-                </tr>
-
-                <tr scope="row">
-                    <td><center>Special Interest</center></td>
-                    <td><center><span>Sp Intefrest Rendered</span></center></td>
-                </tr>
-
-                <tr scope="row">
-                    <td><center>Career Interest</center></td>
-                    <td><center><span>Career Interest Rendered</span></center></td>
-                </tr>
-
-                <tr scope="row">
-                    <td><center>Type of service</center></td>
-                    <td><center><span>Type of service Rendered</span></center></td>
-                </tr>
-
-            </tbody>
-        </table>
-        </div>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src = "script.js">
-    </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="script.js">
+        </script>
 </body>
 
 </html>
